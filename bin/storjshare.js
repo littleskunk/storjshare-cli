@@ -119,7 +119,7 @@ var ACTIONS = {
 
       if (config.telemetry.enabled) {
         try {
-          reporter.report(TelemetryReporter(
+          reporter.report(new TelemetryReporter(
             config.telemetry.service,
             keypair
           ), config, farmer);
