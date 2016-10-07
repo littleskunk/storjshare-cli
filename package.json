@@ -50,7 +50,7 @@
     "leveldown": "^1.4.6",
     "myspeed": "^1.0.1",
     "prompt": "^1.0.0",
-    "storj-lib": "^4.0.0",
+    "storj-lib": "littleskunk/core#test",
     "storj-telemetry-reporter": "^2.0.0"
   }
 }
