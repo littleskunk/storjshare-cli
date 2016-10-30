@@ -16,7 +16,6 @@ var TelemetryReporter = require('storj-telemetry-reporter');
 var reporter = require('../lib/reporter');
 var utils = require('../lib/utils');
 var log = require('../lib/logger');
-var leveldown = require('leveldown');
 var bitcore = storj.deps.bitcore;
 
 var HOME = platform !== 'win32' ? process.env.HOME : process.env.USERPROFILE;
@@ -123,7 +122,9 @@ var ACTIONS = {
 
       farmer.join(function(err) {
         if (err) {
-          log('error', err.message);
+          farmerconf.logger.error(
+            'failed to join network, reason: %s', err.message
+          );
           process.exit();
         }
       });
