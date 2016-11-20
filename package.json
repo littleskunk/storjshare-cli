@@ -49,7 +49,7 @@
     "kad-logger-json": "^0.1.2",
     "myspeed": "^1.0.1",
     "prompt": "^1.0.0",
-    "storj-lib": "^5.0.0",
+    "storj-lib": "littleskunk/core#openfiles",
     "storj-telemetry-reporter": "^3.0.0"
   }
 }
