@@ -1,4 +1,4 @@
-FROM node:4.4
+FROM node:6
 MAINTAINER Ian Patton <ian.patton@gmail.com>
 
 RUN useradd -m -s /bin/bash node

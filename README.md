@@ -6,7 +6,7 @@ A command line program for farming data on the Storj network.
 Prerequisites
 -------------
 
-* Node.js v4.x.x
+* Node.js v6.9.1
 * Git
 * Python v2.x.x
 
@@ -30,7 +30,7 @@ source ~/.zshrc
 Now that you can call the `nvm` program, install Node.js (which comes with NPM):
 
 ```
-nvm install 4.4.4
+nvm install 6.9.1
 ```
 
 > You'll also need to make sure you have a C++ compiler installed before
