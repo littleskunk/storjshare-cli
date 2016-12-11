@@ -102,6 +102,7 @@ var ACTIONS = {
         maxOfferConcurrency: typeof config.network.concurrency === 'undefined' ?
           storj.Farmer.DEFAULTS.maxOfferConcurrency :
           config.network.concurrency,
+        offerBackoffLimit: config.network.offerBackoffLimit,
         rpcPort: config.network.port,
         maxConnections: config.network.maxConnections,
         seedList: config.network.seeds,
