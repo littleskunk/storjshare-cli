@@ -106,7 +106,6 @@ var ACTIONS = {
         rpcPort: config.network.port,
         maxConnections: config.network.maxConnections,
         seedList: config.network.seeds,
-        renterWhitelist: config.network.renterWhitelist,
         doNotTraverseNat: !config.network.forward,
         logger: new Logger(config.loglevel),
         tunnelServerPort: config.network.tunnelport,
@@ -116,6 +115,10 @@ var ACTIONS = {
           storj.Farmer.DEFAULTS.opcodeSubscriptions :
           config.network.opcodes.map(utils.opcodeUpdate)
       };
+
+      if (config.network.renterWhitelist) {
+        farmerconf.renterWhitelist = config.network.renterWhitelist;
+      }
 
       if (config.bridgeUri) {
         farmerconf.bridgeUri = config.bridgeUri;
